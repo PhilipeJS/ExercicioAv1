@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="cadastro" action="cadastro.php" method="post">
+        <label for="nome">Nome do aluno:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula" required><br><br>
+
+        <fieldset>
+            <legend>Curso:</legend>
+            <input type="radio" id="adm" name="curso" value="ADM" required>
+            <label for="adm">ADM</label><br>
+            <input type="radio" id="ads" name="curso" value="ADS">
+            <label for="ads">ADS</label><br>
+            <input type="radio" id="pedagogia" name="curso" value="Pedagogia">
+            <label for="pedagogia">Pedagogia</label>
+        </fieldset><br>
+
+        <label for="email">Email Institucional:</label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required><br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required><br><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br><br>
+
+        <label for="uf">UF:</label>
+        <input type="text" id="uf" name="uf" required><br><br>
+
+        <label for="curso_horas">Curso para Horas Complementares:</label>
+        <input type="text" id="curso_horas" name="curso_horas" required><br><br>
+
+        <label for="carga_horaria">Carga Horária:</label>
+        <input type="number" min="1" max="80" id="carga_horaria" name="carga_horaria" required><br><br>
+
+        <input type="submit" value="Enviar"/>
+        <input type="reset" name="botao" value="Limpar"/>
+    </form>
+</body>
+</html>
